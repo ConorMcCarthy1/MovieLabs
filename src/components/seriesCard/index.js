@@ -53,7 +53,7 @@ export default function SeriesCard({ series, action }) {
         <Grid item xs={6}>
             <Typography variant="h6" component="p">
               <MicrowaveIcon fontSize="small" />
-              {series.with_runtime.lte}
+              {series.popularity}
             </Typography>
           </Grid>
           <Grid item xs={6}>
