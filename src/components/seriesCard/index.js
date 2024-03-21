@@ -8,7 +8,7 @@ import CardMedia from "@mui/material/CardMedia";
 import CardHeader from "@mui/material/CardHeader";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import FavoriteIcon from "@mui/icons-material/Favorite";
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 import CalendarIcon from "@mui/icons-material/CalendarTodayTwoTone";
 import StarRateIcon from "@mui/icons-material/StarRate";
 //import IconButton from "@mui/material/IconButton"; 
@@ -19,21 +19,17 @@ import img from '../../images/film-poster-placeholder.png'
 
 export default function SeriesCard({ series, action }) {
   
-  const handleAddToFavoriteSeries = (e) => {
-    e.preventDefault();
-    alert("Very Good, Very Nice"); 
-    console.log("It's your fav");
-  };
+  
   return (
     <Card sx={{ maxWidth: 345 }}>
          <CardHeader
-        avatar={
-          series.favorite ? (
-            <Avatar sx={{ backgroundColor: 'red' }}>
-              <FavoriteIcon />
-            </Avatar>
-          ) : null
-        }
+        // avatar={
+        //   series.favorite ? (
+        //     <Avatar sx={{ backgroundColor: 'red' }}>
+             
+        //     </Avatar>
+        //   ) : null
+        // }
         title={
           <Typography variant="h5" component="p">
             {series.name}{" "}

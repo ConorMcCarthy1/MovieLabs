@@ -3,7 +3,8 @@ import { getShows } from "../api/tmdb-api";
 import SeriesListPageTemplate from "../components/templateSeriesListPage";
 import { useQuery } from 'react-query';
 import Spinner from '../components/spinner'; 
-import AddToFavoritesIcon from "../components/cardIcons/addToFavourites";
+import AddCircleIcon from '@mui/icons-material/AddCircle';
+
 
 const SeriesPage = (props) => {
 
@@ -29,7 +30,8 @@ console.log(series);
       title="Discover TV Shows"
       series={series}
       action={(series) => {
-        return <AddToFavoritesIcon series={series} />
+        return <AddCircleIcon
+        />
       }}
     />
 );
