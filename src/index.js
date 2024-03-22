@@ -14,7 +14,8 @@ import AddMovieReviewPage from './pages/addMovieReviewPage';
 import AnticipatedMoviesPage from "./pages/watchlistPage"; 
 import SeriesPage from "./pages/SeriesPage";
 import TopRatedPage from "./pages/topRatedPage";
-import TopCreditsPage from "./pages/topCreditsPage";
+import TopCreditsPage from "./pages/topCreditsPage"; 
+import IndividualSeriesPage from "./pages/individualSeriesPage";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -33,6 +34,7 @@ const App = () => {
         <SiteHeader />
         <MoviesContextProvider>
         <Routes>    
+          <Route path="/tv/:id" element={<IndividualSeriesPage/>} />
           <Route path="/credits" element={ <TopCreditsPage/>} />
         <Route path="/tv" element={ <SeriesPage/>} /> 
         <Route path="/movies/toprated" element={ <TopRatedPage/>}  />

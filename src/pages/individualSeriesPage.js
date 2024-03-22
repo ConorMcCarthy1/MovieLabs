@@ -2,14 +2,14 @@ import React from "react";
 import { useParams } from 'react-router-dom'; 
 import { useQuery } from "react-query";
 import TemplateSeriesPage from "../components/seriesTemplatePage";
-import { getSeries } from '../api/tmdb-api'
+import { getSeries } from '../api/tmdb-api';
 import Spinner from '../components/spinner'; 
 import SeriesDetails from "../components/seriesDetails";
 
-const individualSeriesPage = (props) => {
+const IndividualSeriesPage = () => {
   const { id } = useParams();
-  const { data: series , error, isLoading, isError } = useQuery(
-    ["tv", { id: id }],
+  const { data: series, error, isLoading, isError } = useQuery(
+    ["tv" , {id : id} ],
     getSeries
   );
 
@@ -24,11 +24,9 @@ const individualSeriesPage = (props) => {
   return (
     <>
       {series ? (
-        <>
-          <TemplateSeriesPage series={series}>
-            <SeriesDetails series={series} />
-          </TemplateSeriesPage>
-        </>
+        <TemplateSeriesPage series={series}>
+          <SeriesDetails series={series} />
+        </TemplateSeriesPage>
       ) : (
         <p>Waiting for series details</p>
       )}
@@ -36,4 +34,4 @@ const individualSeriesPage = (props) => {
   );
 };
 
-export default individualSeriesPage;
+export default IndividualSeriesPage;

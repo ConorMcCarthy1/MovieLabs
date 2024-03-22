@@ -68,7 +68,7 @@ export default function SeriesCard({ series, action }) {
       </CardContent>
       <CardActions disableSpacing>
         {action(series)}
-        <Link to={`/series/${series.id}`}>
+        <Link to={`/tv/${series.id}`}>
           <Button variant="outlined" size="medium" color="primary">
             More Info ...
           </Button>

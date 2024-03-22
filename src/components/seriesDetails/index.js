@@ -49,10 +49,7 @@ const SeriesDetails = ({ series }) => {  // Don't miss this!
       <Paper component="ul" sx={{...root}}>
         <Chip icon={<AccessTimeIcon />} label={`Began ${series.first_air_date}`} /> 
         <Chip icon={<AccessTimeIcon />} label={`Began ${series.last_air_date}`} />
-        <Chip
-          icon={<MonetizationIcon />}
-          label={`${series.revenue.toLocaleString()}`}
-        /> 
+        
         <Chip label={`Produced in: ${series.production_countries}`} />
         <Chip
           icon={<StarRate />}

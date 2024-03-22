@@ -24,14 +24,17 @@ console.log(series);
   //const favorites = series.filter(m => m.favorite)
  // localStorage.setItem('favorites', JSON.stringify(favorites))
   //const addToFavorites = (movieId) => true 
-
+  
   return (
     <SeriesListPageTemplate
       title="Discover TV Shows"
-      series={series}
-      action={(series) => {
-        return <AddCircleIcon
-        />
+      series={series} 
+      
+      action={(series) => { 
+      //  console.log("very good very nice");
+        return <AddCircleIcon/> 
+        
+        
       }}
     />
 );

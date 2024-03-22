@@ -16,7 +16,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import img from '../../images/film-poster-placeholder.png'  
 
 
-export default function CreditsCard({ credit, action }) {
+export default function CreditsCard({ credit }) {
   // const { favorites, addToFavorites } = useContext(MoviesContext);
 
   // if (favorites.find((id) => id === credit.id)) {
@@ -55,7 +55,6 @@ export default function CreditsCard({ credit, action }) {
         }
       />
       <CardActions disableSpacing>
-        {action(credit)}
         <Link to={`/credits/${credit.id}`}>
           <Button variant="outlined" size="medium" color="primary">
             More Info ...

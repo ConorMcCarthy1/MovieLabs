@@ -23,8 +23,8 @@ function SeriesListPageTemplate({ series, name, action }) {
   };
 
   return (
-    <Grid container sx={{ padding: '20px' }}>
-      <Grid item xs={12}>
+    <Grid container sx={{ padding: '20px' }}> 
+      <Grid item xs={12}> 
         <SeriesHeader series={series} />
       </Grid>
       <Grid item container spacing={5}>
