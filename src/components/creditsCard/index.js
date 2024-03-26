@@ -40,7 +40,7 @@ export default function CreditsCard({ credit }) {
             </Avatar>
           
         }
-        name={
+        title={
           <Typography variant="h5" component="p">
             {credit.name}{" "}
           </Typography>

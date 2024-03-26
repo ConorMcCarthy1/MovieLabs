@@ -28,7 +28,7 @@ const TopCreditsPage = (props) => {
   return (
     <CreditsListPageTemplate
       title="Discover The Top People in Movies and TV Today"
-      credit={credits}
+      credits={credits}
       action={(credits) => {
         return <AddToFavoritesIcon credit={credits} />
       }}

@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; 
 import Chip from "@mui/material/Chip";
 import Paper from "@mui/material/Paper";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
@@ -21,7 +21,7 @@ const root = {
 //const chip = { margin: 0.5 };
 
 const CreditsDetails = ({ credit }) => {  // Don't miss this!
-     //const [drawerOpen, setDrawerOpen] = useState(false);
+  //  const [drawerOpen, setDrawerOpen] = useState(false);
   return (
     <>
       <Typography variant="h5" component="h3">
