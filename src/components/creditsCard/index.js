@@ -26,19 +26,21 @@ export default function CreditsCard({ credit }) {
   // }
 
 
-  //  function AddToFavorites() {
+    function LogFav() {
      
-  //   console.log("Wham-bam-I am-The Man"); 
-  //   alert("They're your favourite");
-  //  };
+    console.log("Wham-bam-I am-The Man"); 
+     alert("They're your favourite");
+    };
   return (
     <Card sx={{ maxWidth: 345 }}>
          <CardHeader
-        avatar={
-            <Avatar sx={{ backgroundColor: 'red' }}> 
-              <FavoriteIcon/>
-            </Avatar>
+        avatar={ 
           
+            <Avatar sx={{ backgroundColor: 'transparent' }}> 
+            <button onClick={LogFav}><FavoriteIcon/></button>
+              </Avatar> 
+          
+        
         }
         title={
           <Typography variant="h5" component="p">
@@ -55,11 +57,11 @@ export default function CreditsCard({ credit }) {
         }
       />
       <CardActions disableSpacing>
-        <Link to={`/credits/${credit.id}`}>
+        {/* <Link to={`/credits/${credit.id}`}>
           <Button variant="outlined" size="medium" color="primary">
             More Info ...
           </Button>
-        </Link>
+        </Link> */}
       </CardActions>
     </Card>
   );

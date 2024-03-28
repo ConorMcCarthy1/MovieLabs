@@ -20,7 +20,8 @@ const root = {
 };
 //const chip = { margin: 0.5 };
 
-const CreditsDetails = ({ credit }) => {  // Don't miss this!
+const CreditsDetails = ({ credit }) => {   
+   // Don't miss this!
   //  const [drawerOpen, setDrawerOpen] = useState(false);
   return (
     <>
