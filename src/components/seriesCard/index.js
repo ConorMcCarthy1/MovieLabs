@@ -18,7 +18,11 @@ import img from '../../images/film-poster-placeholder.png'
 
 
 export default function SeriesCard({ series, action }) {
-  
+  function LogSeries() {
+     
+    console.log("Very Good, Very Nice"); 
+     alert("Finish Breaking Bad first, you!");
+    };
   
   return (
     <Card sx={{ maxWidth: 345 }}>
@@ -43,8 +47,10 @@ export default function SeriesCard({ series, action }) {
             ? `https://image.tmdb.org/t/p/w500/${series.poster_path}`
             : img
         }
-      />
-      <CardContent>
+      /> 
+       
+      <CardContent> 
+      <button onClick={LogSeries}><AddCircleIcon/></button> 
         <Grid container> 
         <Grid item xs={6}>
             <Typography variant="h6" component="p">
@@ -72,7 +78,7 @@ export default function SeriesCard({ series, action }) {
           <Button variant="outlined" size="medium" color="primary">
             More Info ...
           </Button>
-        </Link>
+        </Link>  
       </CardActions>
     </Card>
   );

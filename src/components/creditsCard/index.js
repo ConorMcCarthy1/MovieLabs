@@ -6,7 +6,6 @@ import CardActions from "@mui/material/CardActions";
 //import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import CardHeader from "@mui/material/CardHeader";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 //import CalendarIcon from "@mui/icons-material/CalendarTodayTwoTone";
@@ -28,8 +27,8 @@ export default function CreditsCard({ credit }) {
 
     function LogFav() {
      
-    console.log("Wham-bam-I am-The Man"); 
-     alert("They're your favourite");
+    console.log("Wham-bam-I am-The Man. Logged to your favourites."); 
+     alert("They're your favourite, we'll keep you posted about new series or movies they're in.");
     };
   return (
     <Card sx={{ maxWidth: 345 }}>

@@ -19,6 +19,7 @@ const SeriesPage = (props) => {
   }  
   const series = data.results;
 console.log(series); 
+ 
 
   // Redundant, but necessary to avoid app crashing.
   //const favorites = series.filter(m => m.favorite)
@@ -31,9 +32,7 @@ console.log(series);
       series={series} 
       
       action={(series) => { 
-      //  console.log("very good very nice");
-        return <AddCircleIcon/> 
-        
+       
         
       }}
     />
